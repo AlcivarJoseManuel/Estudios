@@ -1,0 +1,31 @@
+***** comandos entorno virtual *****
+-virtualenv -p python3v env--- Crea entornos virtuales, , cual sera el interprete a utilizar, nombre del entorno virtualizado
+-.\env\scripts\activate -- sirve para activar el entorno virtual.
+-pip install flask -- 
+-pip install Django==5.1.1
+
+- deactivate -- permite desactivar mi entorno cuando dejo de trabajar. 
+-pip freeze > requirements.txt -- permite ver los paquetes instalados. 
+- pip install -r .\requirements.txt -- permite migrar paquetes a un nuevo entorno virtualizado
+
+***** api rest ***
+
+-django-admin startproject drf ."iniciales o nombre a dar"
+-django-admin startapp api  crea un modelo basico de una api rest
+se debe ingresar a "settings", "INSTALLED_APPS" y comolar el nombre del modelo base creado. 
+
+- pip install rich sirve para instalar formateador de texto 
+- python manage.py migrate , se usa en Django para aplicar las migraciones a la base de datos. Esto significa que se crean o actualizan las tablas y las estructuras de la base de datos basadas en los modelos definidos en tu proyecto Django. Básicamente, sincroniza tu base de datos con el estado actual de tus modelos.
+
+- python manage.py makemigrations
+- python manage.py createsuperuser
+- python manage.py runserver   
+- http://127.0.0.1:8000/admin/login/?next=/admin/
+- pip install djangorestframework
+
+-- registrar en setting "rest_framework"
+
+-- craer archivo serializer.py
+-- https://www.django-rest-framework.org/ documentacion
+-- crear archivo urls.py 
+-- pip install coreapi
